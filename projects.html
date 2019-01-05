@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title> Klajdi's Portfolio </title>
+    <link rel="stylesheet" type="text/css" href="Css/style.css">
+    <link rel="shortcut icon" type="image/png" href="Images/Logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+
+
+    <nav id="navbar" class="overlay">
+        <a class="closebtn" onclick="closenav()">&times;</a>
+
+        <div class="overlay-content">
+            <a href="#title" onclick="closenav()">Home</a>
+            <a href="#aboutme" onclick="closenav()">About me</a>
+            <a href="#project" onclick="closenav()">Projects</a>
+        </div>
+    </nav>
+
+    <script>
+        function opennav() {
+            document.getElementById("navbar").style.width = "42%";
+        }
+
+
+
+        function closenav() {
+            document.getElementById("navbar").style.width = "0%";
+        }
+    </script>
+
+</head>
+
+
+
+<body>
+    <div class="wrapper">
+
+        <header id=main-header>
+            <img id="burger" src="Images/menu.svg" alt="burgermenu" onclick="opennav()">
+            <a href="#title">
+                <img id="logo" src="images/logo.png" alt="logo">
+            </a>
+
+
+
+
+
+        </header>
+
+
+
+
+
+        <main>
+            <section id="projects">
+                <h3> My projects</h3>
+
+
+
+              <div class="project1">
+                  <div class="overlay_project"><a href="#">View project</a></div>
+              </div>
+              <div class="project2">
+                  <div class="overlay_project"><a href="#">View project</a></div>
+              </div>
+               <div class="project3">
+                   <div class="overlay_project"><a href="#">View project</a></div>
+               </div>
+
+
+
+
+
+
+
+                      </section>
+
+        </main>
+
+
+
+
+
+
+
+
+
+        <footer>
+            <p> Klajdi Ajdini &copy; 2019</p>
+            <a href="#">Home</a>
+            <a href="#">About me</a>
+            <a href="#">Project</a>
+            <a href="#"> Linkedin</a>
+        </footer>
+    </div>
+</body>
+
+</html>
