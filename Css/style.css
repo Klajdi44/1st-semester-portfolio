@@ -532,13 +532,18 @@ footer{
          color:#fff;
      text-transform: uppercase;
      border-radius: 15px;
-    margin-top:4.9em;
+    margin-bottom: 1.5em;
      background: #333;
 }
 
 
 
-
+#themes1 a:hover {
+  transform: scale(1.2);
+     transition: 1s ease;
+     color: yellowgreen;
+     background: #333;
+     }
 
 
 
@@ -949,8 +954,10 @@ font-size: 1.5em;
     #themes1 .page-left img {
   position: relative;
         margin-left: 5em;
-        width: 30em;
+        width: 23em;
         margin: 0 auto;
+          bottom: 3em;
+
 }
     #themes1 h4{
         grid-area: about-h4;
@@ -962,7 +969,7 @@ font-size: 1.5em;
 
     #themes1 .page-right p {
 
-    margin-top:5em;
+    margin-top:4em;
 
 }
 
