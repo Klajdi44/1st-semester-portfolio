@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -15,9 +15,7 @@ body {
     text-align: center;
 }
 
-a{
-    text-decoration: none;
-}
+
 /*////////h1,h2,h3s/////////////////////////////////////////////*/
 
 h3 {
@@ -47,18 +45,17 @@ h1 {
     color: #fff;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 2em;
+    font-size: 2.7em;
 }
 
 h2 {
-    margin-bottom: 1.6em;
     text-align: center;
     color: greenyellow;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: 'Kalam', cursive;
 }
 
-p{
+p {
     text-align: center;
 }
 
@@ -69,7 +66,6 @@ p{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     background-color: dimgray;
@@ -84,8 +80,9 @@ p{
     top: 15%;
     width: 100%;
     margin-top: 2em;
-    font-size: 2.3em;
+    font-size: 2em;
     font-family: 'Poppins', sans-serif;
+    line-height: 3em;
 }
 
 .overlay a {
@@ -115,7 +112,7 @@ p{
 }
 
 /*////////////////////Burgermeny///////////*/
-#main-header{
+#main-header {
     width: 100%;
     height: auto;
     top: 2em;
@@ -127,24 +124,25 @@ p{
     width: 4em;
     margin: auto;
     margin-left: 20px;
-    z-index:2;
+    z-index: 2;
 
 }
 
 #burger:hover {
-    background-color: greenyellow;
-    height: 5em;
+    background-color: #38454F;
+    height: 4.5em;
     border-radius: 50%;
-    width: 5em;
-    transition: border-radius 1s, background-color 2s;
+    overflow: hidden;
+    width: 4.5em;
+    transition: border-radius 1s, background-color 0.5s;
     cursor: pointer;
 }
 
 
 
- /****** logo /////////////////////////*/
+/****** logo /////////////////////////*/
 #logo {
-   display: none;
+    display: none;
 }
 
 /*
@@ -161,7 +159,7 @@ p{
 
 /*//////////////////////Home page/////*/
 
-#title{
+#title {
     padding-top: 40%;
 }
 
@@ -197,7 +195,7 @@ section {
 
 
 
-#aboutme .page-left img{
+#aboutme .page-left img {
     width: 50%;
     border-radius: 500px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
@@ -205,7 +203,7 @@ section {
     display: block;
 }
 
- #aboutme .page-left img:hover {
+#aboutme .page-left img:hover {
     box-shadow:
         6px 6px #000;
     transform: scale(1.1);
@@ -227,7 +225,7 @@ section {
     padding: 1em 0;
 }
 
-#facts .page-left img{
+#facts .page-left img {
     width: 70%;
     border-radius: 500px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
@@ -259,11 +257,12 @@ section {
 
 }
 
-#skills h3{
-color: #fff;
+#skills h3 {
+    color: #fff;
 
 }
-.container{
+
+.container {
     width: 100%;
     text-align: center;
     padding: 20px;
@@ -272,22 +271,23 @@ color: #fff;
     border-radius: 25px;
 }
 
-.skills-p{
+.skills-p {
     position: relative;
     width: 100%;
 }
 
 
 
-.container p{
+.container p {
     color: #fff;
     text-transform: uppercase;
     margin: 4px 0 10px 0;
     padding: 0;
     font-weight: bold;
-    letter-spacing: 1px;}
+    letter-spacing: 1px;
+}
 
-.container p::nth-child(2) {
+.container p:nth-child(2) {
     float: right;
 }
 
@@ -308,7 +308,7 @@ color: #fff;
 
 .container:hover {
     transform: scale(1.07);
-    transition: 1s ease ;
+    transition: 1s ease;
 }
 
 
@@ -332,9 +332,11 @@ color: #fff;
     font-size: 4vw;
 }
 
-#projects .project1, #projects .project2, #projects .project3,
-#projects .project4{
-height: 300px;
+#projects .project1,
+#projects .project2,
+#projects .project3,
+#projects .project4 {
+    height: 300px;
     width: 90%;
     box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
     border-radius: 20px;
@@ -343,105 +345,94 @@ height: 300px;
 }
 
 
-.project1{
+.project1 {
     background: url(../Images/web%20.jpg);
-     background-size: cover;
+    background-size: cover;
     margin: 2em 0;
     position: relative;
 }
 
 
-.project2{background: url(../Images/content.jpg);
+.project2 {
+    background: url(../Images/content.jpg);
     background-size: cover;
-     position: relative;
+    position: relative;
 }
 
 
-.project3{
-    background: url(../Images/klajdi%201.jpg);
-     background-size: cover;
-     position: relative;
+.project3 {
+    background: url(../Images/animation.jpg);
+    background-size: cover;
+    position: relative;
 }
 
-.project4{
-    background: url(../Images/klajdi%201.jpg);
-     background-size: cover;
-     position: relative;
+.project4 {
+    background: url(../Images/ux.jpg);
+    background-size: cover;
+    position: relative;
 }
 
 
 .project1 a {
- display: inline-block;
-     padding: 10px 20px;
-     border: 1px solid #fff;
-     text-decoration: none;
-         color:#fff;
-     text-transform: uppercase;
-     border-radius: 15px;
-    margin-top:4.9em;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin-top: 4.9em;
     background: #000;
 
-     }
-
-.project2 a {
- display: inline-block;
-     padding: 10px 20px;
-     border: 1px solid #fff;
-     text-decoration: none;
-         color:#fff;
-     text-transform: uppercase;
-     border-radius: 15px;
-    margin-top:4.9em;
-     background: #000;
-
-     }
-
-.project3 a {
- display: inline-block;
-     padding: 10px 20px;
-     border: 1px solid #fff;
-     text-decoration: none;
-         color:#fff;
-     text-transform: uppercase;
-     border-radius: 15px;
-    margin-top:4.9em;
-     background: #000;
-
-     }
-
-.project4 a {
- display: inline-block;
-     padding: 10px 20px;
-     border: 1px solid #fff;
-     text-decoration: none;
-         color:#fff;
-     text-transform: uppercase;
-     border-radius: 15px;
-    margin-top:4.9em;
-     background: #333;
-
-     }
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
-    display: none;
 }
 
+.project2 a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin-top: 4.9em;
+    background: #000;
+
+}
+
+.project3 a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin-top: 4.9em;
+    background: #000;
+
+}
+
+.project4 a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin-top: 4.9em;
+    background: #333;
+
+}
+
+footer {
+    display:none;
+}
 
 
 /*////////Theme 01///////////////*/
 
-.themes{
+.themes {
     background: #fff;
     width: 100%;
     height: auto;
@@ -453,7 +444,7 @@ footer{
 
 
 
-.themes h3{
+.themes h3 {
     color: #333;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -463,9 +454,7 @@ footer{
 
 
 
-
-
-.themes .page-left img{
+.themes .page-left img {
     width: 80%;
     border-radius: 10px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
@@ -473,39 +462,40 @@ footer{
     display: block;
 }
 
- .themes .page-left img:hover {
+.themes .page-left img:hover {
     box-shadow:
         6px 6px #000;
     transform: scale(1.1);
     transition: 1s;
 }
-.themes a{
- display: inline-block;
-     padding: 13px 25px;
-     border: 1px solid #fff;
-     text-decoration: none;
-         color:#fff;
-     text-transform: uppercase;
-     border-radius: 15px;
+
+.themes a {
+    display: inline-block;
+    padding: 13px 25px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 15px;
     margin-bottom: 1.5em;
-     background: #333;
+    background: #333;
 }
 
 
 
 .themes a:hover {
-  transform: scale(1.2);
-     transition: 1s ease;
-     color: yellowgreen;
-     background: #333;
-     }
+    transform: scale(1.2);
+    transition: 1s ease;
+    color: yellowgreen;
+    background: #333;
+}
 
 
 
-/*///////////////////////////////////themes1////////////////*/
+/*///////////////////////////////////alternative themes////////////////*/
 
 
-.themes1{
+.themes1 {
     background: #fff;
     width: 100%;
     height: auto;
@@ -517,7 +507,7 @@ footer{
 
 
 
-.themes1 h3{
+.themes1 h3 {
     color: #333;
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -529,7 +519,7 @@ footer{
 
 
 
-.themes1 .page-left img{
+.themes1 .page-left img {
     width: 80%;
     border-radius: 10px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
@@ -537,112 +527,116 @@ footer{
     display: block;
 }
 
- .themes1 .page-left img:hover {
+.themes1 .page-left img:hover {
     box-shadow:
         6px 6px #000;
     transform: scale(1.1);
     transition: 1s;
 }
 
-.themes1 a{
- display: inline-block;
-     padding: 13px 25px;
-     border: 1px solid #fff;
-     text-decoration: none;
-         color:#fff;
-     text-transform: uppercase;
-     border-radius: 15px;
+.themes1 a {
+    display: inline-block;
+    padding: 13px 25px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 15px;
     margin-bottom: 1.5em;
-     background: #333;
+    background: #333;
 }
 
 
 
 .themes1 a:hover {
-  transform: scale(1.2);
-     transition: 1s ease;
-     color: yellowgreen;
-     background: #333;
-     }
+    transform: scale(1.2);
+    transition: 1s ease;
+    color: yellowgreen;
+    background: #333;
+}
 
 
 /*///////scrollbar////////////////*/
 
-::-webkit-scrollbar{
-  background: #000;
-  width: 15px;
+::-webkit-scrollbar {
+    background: #000;
+    width: 0.9em;
 }
 
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(greenyellow, #333);
-  border-radius: 20px;
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(greenyellow, #333);
+    border-radius: 20px;
 }
-
-
-
-
-
 
 
 
 /*/////////////////////////////tablet version/////////////////*/
-@media all and (min-width: 768px ){
+@media all and (min-width: 768px) {
 
-/*//////////// home page ///////*/
-    .wrapper{
+    /*//////////// home page ///////*/
+    .wrapper {
         position: relative;
         height: 100%;
     }
-    #main-header{
+
+    #main-header {
         height: 100%;
     }
-    #title h1{
+
+    #title h1 {
         font-size: 5em;
     }
 
-    #title h2{
+    #title h2 {
         font-size: 3em;
     }
 
-/*//////////about page////////*/
+    /*//////////about page////////*/
 
-    #aboutme p{
+    #aboutme p {
         font-size: 1.5em;
     }
 
-    h3{
+    h3 {
         font-size: 3em;
     }
 
-    h4{
+    h4 {
         font-size: 2em;
     }
 
-    .page-right li{
+    .page-right li {
         font-size: 1.5em;
     }
 
 
-/*/////////portfolio page/////*/
-    #projects .project1,#projects .project2,#projects .project3,#projects .project4{
+    /*/////////portfolio page/////*/
+    #projects .project1,
+    #projects .project2,
+    #projects .project3,
+    #projects .project4 {
         height: 400px;
+    }
+
+    #title {
+        padding-top: 7%;
     }
 }
 
 
 
 
-/*//////////DESKTOP VERSION///////////////////////-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------///////////////////////*/
-@media all and (min-width: 1024px ){
+/*//////////DESKTOP VERSION//////////////////////*/
+@media all and (min-width: 1024px) {
 
-/*/////////home page/////////////*/
-    #title{
-        padding-top: 10%;
+    /*/////////home page/////////////*/
+    #title {
+        padding-top: 7%;
     }
 
-/*///////////about page//////////////////////////*/
+    /*///////////about page//////////////////////////*/
 
-    #aboutme{
+    #aboutme {
         height: 800px;
         border-radius: 40px;
         display: grid;
@@ -656,15 +650,15 @@ footer{
 
     }
 
-    .about-h3{
+    .about-h3 {
         grid-area: about-h3;
     }
 
-    .page-left{
+    .page-left {
         grid-area: page-left;
     }
 
-   #aboutme .page-right{
+    #aboutme .page-right {
         grid-area: page-right;
 
     }
@@ -672,23 +666,24 @@ footer{
 
 
     #aboutme .page-right {
-        margin-right: 3em;
-}
+        margin-right: 2em;
+    }
 
     #aboutme .page-left img {
-  position: relative;
+        position: relative;
         margin-left: 5em;
         width: 25em;
         bottom: 4em;
         margin: 0 auto;
-}
-    #aboutme h4{
-font-size: 1.5em;
-        margin-right: 20em;
-}
+    }
 
-/*////////////////////////FACTS/////////////////////*/
-    #facts{
+    #aboutme h4 {
+        font-size: 1.5em;
+        margin-right: 20em;
+    }
+
+    /*////////////////////////FACTS/////////////////////*/
+    #facts {
         height: 730px;
         display: grid;
         grid-template-columns: 0.7fr 1fr;
@@ -698,16 +693,16 @@ font-size: 1.5em;
             "page-left page-right";
     }
 
-.h3-facts{
+    .h3-facts {
         grid-area: h3-facts;
     }
 
-    .page-left{
+    .page-left {
         grid-area: page-left;
         padding: 2em 0;
     }
 
-    .page-right{
+    .page-right {
         grid-area: page-right;
         padding: 0 2em;
     }
@@ -715,41 +710,42 @@ font-size: 1.5em;
     #facts .page-left img {
         position: relative;
 
-}
+    }
 
 
     #facts .page-right ul {
         padding-right: 10em;
-        list-style:none;
+        list-style: none;
 
 
 
-}
+    }
+
     /*///////////////////skills///////////////////*/
-    #skills{
+    #skills {
         width: 60%;
         margin: 0 auto;
         height: auto;
     }
 
-.container{
-    line-height: 50px;
+    .container {
+        line-height: 50px;
     }
 
 
 
 
     .container p:nth-child(2) {
-    float: right;
-    position: relative;
-    top: -64px;
+        float: right;
+        position: relative;
+        top: -64px;
 
-}
+    }
 
-/*/////////////project page////////*/
+    /*/////////////project page////////*/
 
-    #projects{
-    display: grid;
+    #projects {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.1fr 1fr 1fr;
         grid-template-areas:
@@ -760,28 +756,28 @@ font-size: 1.5em;
         z-index: 1;
     }
 
-    .h3-projects{
+    .h3-projects {
         grid-area: h3-projects;
     }
 
-    .project1{
+    .project1 {
         grid-area: project1;
     }
 
-    .project2{
+    .project2 {
         grid-area: project2;
     }
 
-    .project3{
+    .project3 {
         grid-area: project3;
 
     }
 
-    .project4{
+    .project4 {
         grid-area: project4;
     }
 
-    #projects p{
+    #projects p {
         padding: 0;
         margin: 0;
         font-size: 1.5em;
@@ -789,7 +785,10 @@ font-size: 1.5em;
         text-transform: uppercase;
     }
 
-    #projects .project1,#projects .project2,#projects .project3, #projects .project4{
+    #projects .project1,
+    #projects .project2,
+    #projects .project3,
+    #projects .project4 {
         height: 320px;
         width: 65%;
 
@@ -797,97 +796,99 @@ font-size: 1.5em;
 
 
 
-.project1 a {
- display: inline-block;
-     padding: 10px 20px;
-     border: 1px solid #fff;
-     text-decoration: none;
-         color:#fff;
-     text-transform: uppercase;
-     border-radius: 15px;
-    margin-top:4.9em;
-
-     }
-
-
-
- .project1 a:hover {
-  transform: scale(1.2);
-     transition: 1s ease;
-     color: yellowgreen;
-     background: #333;
-
-     }
-
-.project2 a {
- display: inline-block;
-     padding: 10px 20px;
-     border: 1px solid #fff;
-     text-decoration: none;
-         color:#fff;
-     text-transform: uppercase;
-     border-radius: 15px;
-        margin-top:4.9em;
+    .project1 a {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #fff;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 15px;
+        margin-top: 4.9em;
 
     }
 
 
 
- .project2 a:hover {
-  transform: scale(1.2);
-     transition: 1s ease;
-     color: yellowgreen;
-     background: #333;
-     }
-.project3 a {
- display: inline-block;
-     padding: 10px 20px;
-     border: 1px solid #fff;
-     text-decoration: none;
-         color:#fff;
-     text-transform: uppercase;
-     border-radius: 15px;
-        margin-top:4.9em;
+    .project1 a:hover {
+        transform: scale(1.2);
+        transition: 1s ease;
+        color: yellowgreen;
+        background: #333;
+
+    }
+
+    .project2 a {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #fff;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 15px;
+        margin-top: 4.9em;
 
     }
 
 
 
- .project3 a:hover {
-  transform: scale(1.2);
-     transition: 1s ease;
-     color: yellowgreen;
-     background: #333;
-     }
-.project4 a {
- display: inline-block;
-     padding: 10px 20px;
-     border: 1px solid #fff;
-     text-decoration: none;
-         color:#fff;
-     text-transform: uppercase;
-     border-radius: 15px;
-      margin-top:4.9em;
+    .project2 a:hover {
+        transform: scale(1.2);
+        transition: 1s ease;
+        color: yellowgreen;
+        background: #333;
+    }
+
+    .project3 a {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #fff;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 15px;
+        margin-top: 4.9em;
 
     }
 
 
 
- .project4 a:hover {
-  transform: scale(1.2);
-     transition: 1s ease;
-     color: yellowgreen;
-     background: #333;
-     }
+    .project3 a:hover {
+        transform: scale(1.2);
+        transition: 1s ease;
+        color: yellowgreen;
+        background: #333;
+    }
 
-/*//////////////////////////Themes ///////////////*/
+    .project4 a {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px solid #fff;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 15px;
+        margin-top: 4.9em;
+
+    }
+
+
+
+    .project4 a:hover {
+        transform: scale(1.2);
+        transition: 1s ease;
+        color: yellowgreen;
+        background: #333;
+    }
+
+    /*//////////////////////////Themes ///////////////*/
 
 
 
 
 
-     .themes{
-        background-color:  #fff;
+    .themes {
+        background-color: #fff;
         height: 800px;
         border-radius: 40px;
         display: grid;
@@ -896,58 +897,59 @@ font-size: 1.5em;
         grid-template-rows: 0.1fr 1fr;
         grid-template-areas:
             "about-h3 about-h3"
-             "about-h4 about-h4 "
+            "about-h4 about-h4 "
             "page-left page-right";
 
 
     }
 
-    .themes h3{
+    .themes h3 {
         grid-area: about-h3;
     }
 
-   .themes .page-left{
+    .themes .page-left {
         grid-area: page-left;
     }
 
-   .themes .page-right{
+    .themes .page-right {
         grid-area: page-right;
-               margin-right: 3em;
+        margin-right: 3em;
 
 
     }
 
 
     .themes .page-left img {
-  position: relative;
+        position: relative;
         margin-left: 5em;
         width: 30em;
         bottom: 10em;
         margin: 0 auto;
-}
-    .themes h4{
+    }
+
+    .themes h4 {
         grid-area: about-h4;
-font-size: 1.5em;
+        font-size: 1.5em;
         margin: 0;
         padding: 0;
 
-}
+    }
 
     .themes .page-right p {
-      line-height: 1.8em;
+        line-height: 1.8em;
 
-    margin-top: -7em;
+        margin-top: -7em;
 
-}
-
-
- /*/////////////////////////////////////////////*/
+    }
 
 
+    /*/////////////////////////////////////////////*/
 
 
-     .themes1{
-        background-color:  #fff;
+
+
+    .themes1 {
+        background-color: #fff;
         height: 800px;
         border-radius: 40px;
         display: grid;
@@ -956,154 +958,94 @@ font-size: 1.5em;
         grid-template-rows: 0.1fr 1fr;
         grid-template-areas:
             "about-h3 about-h3"
-             "about-h4 about-h4 "
+            "about-h4 about-h4 "
             "page-left page-right";
 
 
     }
 
-    .themes1 h3{
+    .themes1 h3 {
         grid-area: about-h3;
     }
 
-   .themes1 .page-left{
+    .themes1 .page-left {
         grid-area: page-left;
     }
 
-   .themes1 .page-right{
+    .themes1 .page-right {
         grid-area: page-right;
-               margin-right: 3em;
+        margin-right: 3em;
 
 
     }
 
 
     .themes1 .page-left img {
-  position: relative;
+        position: relative;
         margin-left: 5em;
         width: 23em;
         margin: 0 auto;
-          bottom: 3em;
+        bottom: 3em;
 
-}
-    .themes1 h4{
+    }
+
+    .themes1 h4 {
         grid-area: about-h4;
-font-size: 1.5em;
+        font-size: 1.5em;
         margin: 0;
         padding: 0;
 
-}
+    }
 
     .themes1 .page-right p {
 
-    margin-top:4em;
-              line-height: 1.8em;
+        margin-top: 4em;
+        line-height: 1.8em;
 
 
-}
+    }
 
 
+    /*///////////////////////////footer //////////////////////*/
+    footer {
+        display: block;
+        background-color: #000;
+        height: 180px;
+        color: #333;
+        font-family: Helvetica;
+        border-radius: 50px;
+        position: relative;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        margin-top: 2.5em;
 
 
+    }
+
+    footer p {
+        display: inline-block;
+        margin: 60px 35px;
+        color: #fff;
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    footer a {
+        margin-left: 2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 1px solid #fff;
+        padding: 10px 25px;
+        border-radius: 20px;
+        color: #fff;
+    }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   /*///////////////////////////footer //////////////////////*/
-    footer{
- display: block;
-    background-color: #000;
-    height: 180px;
-    color: #333;
-    font-family: Helvetica;
-    border-radius: 50px;
-    position: relative;
-    border: 2px solid #fff;
-    border-radius: 10px;
-            margin-top: 2.5em;
-
+    footer a:hover {
+        background: #333;
+        color: greenyellow;
+        transition: 0.2s ease;
+    }
 
 }
-
-footer p{
-display: inline-block;
-    margin: 60px 35px;
-    color: #fff;
-}
-
-
-footer a{
-margin-left: 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid #fff;
-    padding: 10px 25px;
-    border-radius: 20px;
-    color: #fff;
-        }
-
-
-
-
-footer a:hover{
-background: #333;
-    color: greenyellow;
-    transition: 0.2s ease;
-}
-
-
-
-}
-}
-
-
 
