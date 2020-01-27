@@ -16,6 +16,7 @@ body {
 }
 
 
+
 /*////////h1,h2,h3s/////////////////////////////////////////////*/
 
 h3 {
@@ -426,7 +427,7 @@ section {
 }
 
 footer {
-    display:none;
+    display: none;
 }
 
 
@@ -943,7 +944,7 @@ footer {
 
     .themes .page-right p {
         line-height: 1.8em;
-      text-align: justify;
+        text-align: justify;
         margin-top: -7em;
 
     }
@@ -1004,7 +1005,7 @@ footer {
     }
 
     .themes1 .page-right p {
-text-align: justify;
+        text-align: justify;
         margin-top: 4em;
         line-height: 1.8em;
 
@@ -1054,4 +1055,3 @@ text-align: justify;
     }
 
 }
-
